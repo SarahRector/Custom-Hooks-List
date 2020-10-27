@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueenPage component renders QueenPage 1`] = `
+<DocumentFragment>
+  <button
+    disabled=""
+  >
+    &lt;
+  </button>
+  <button>
+    &gt;
+  </button>
+  <h1>
+    Loading...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`QueenPage component renders QueenPage 2`] = `
+<DocumentFragment>
+  <button
+    disabled=""
+  >
+    &lt;
+  </button>
+  <button>
+    &gt;
+  </button>
+  <ul
+    data-testid="queens"
+  >
+    <li>
+      <a
+        href="/queens/89"
+      >
+        <figure>
+          <img
+            alt="Trixie"
+            src="test.png"
+          />
+          <figcaption>
+            Trixie
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
