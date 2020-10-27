@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import QueenItem from './QueenItem';
+import QueenDetail from './QueenDetail';
 import { getQueensById } from '../../services/noKeyNoShadeApi';
 import { MemoryRouter, Route } from 'react-router-dom';
 
 jest.mock('../../services/noKeyNoShadeApi.js');
 
-describe('QueenItem component', () => {
-  it('renders QueenItem after a load', () => {
+describe('QueenDetail component', () => {
+  it('renders QueenDetail after a load', () => {
     getQueensById.mockResolvedValue({
       id: 89,
       name: 'Trixie',
@@ -15,7 +15,7 @@ describe('QueenItem component', () => {
       quote: 'words and things'
     });
     render(<MemoryRouter initialEntries={['/queen/89']}>
-      <Route path="/queen/:id" component={QueenItem}/>
+      <Route path="/queen/:id" component={QueenDetail}/>
     </MemoryRouter>);
 
     screen.getByText('Loading...');

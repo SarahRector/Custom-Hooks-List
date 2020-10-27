@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQueenById } from '../../hooks/queens';
 
-const QueenItem = () => {
+const QueenDetail = () => {
   const { id } = useParams();
   const { loading, queen } = useQueenById(id);
   if(loading) return <h1>Loading...</h1>;
@@ -17,4 +17,4 @@ const QueenItem = () => {
   );
 };
 
-export default QueenItem;
+export default QueenDetail;
