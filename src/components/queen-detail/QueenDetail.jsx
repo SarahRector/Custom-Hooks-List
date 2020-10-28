@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQueenById } from '../../hooks/queens';
@@ -11,7 +12,7 @@ const QueenDetail = () => {
   return (
     <>
       <h1>{queen.name}</h1>
-      <img src={queen.image_url} alt={queen.name} />
+      <img src={queen.image_url} alt={queen.name} width="200"/>
       <p>{queen.quote}</p>
     </>
   );

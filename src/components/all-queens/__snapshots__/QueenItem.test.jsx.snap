@@ -6,6 +6,7 @@ exports[`QueenItem component renders QueenItem 1`] = `
     <img
       alt="Trixie"
       src="test.png"
+      width="200"
     />
     <figcaption>
       Trixie

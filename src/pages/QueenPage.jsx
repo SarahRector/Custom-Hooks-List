@@ -14,7 +14,7 @@ const QueenPage = () => {
 
       <button
         onClick={() => setPage(page => page + 1)}
-        disabled={page >= page.length}
+        disabled={page >= 25}
       >&gt;</button>
       <QueenList page={page} />
     </>
